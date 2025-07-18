@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Food App </title>
+    <head>
+        <style>
+            header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color:black;
+      color:white;
+    }
+    footer {
+        background-color:black;
+        color:white;
+        padding:20px;
+        margin-top:20px;
+    }
+      nav {
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+        display:inline-block;
+        padding:20px;
+        text-decoration:none;
+    }
+    .projects{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:20px;
+    }
+    .project-card{
+        background-color:whitesmoke;
+        margin-top:30px;
+        padding:30px;
+        border-radius:8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-size:cover;
+        background-position: center;
+        position: relative;
+        
+    }
+    .project-card a.card-link{
+        display: block;
+        height:100%;
+  width: 100%;
+  text-decoration:none;
+  color: inherit;
+    }
+    .project-card .overlay {
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 10px;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-image: url('cnfbackground.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+    @media (max-width: 900px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <h1> Chinese Takeout </h1>
+            <nav>
+                <a href="#" style="color:white;">Home</a>
+                <a href="#" style="color:white">About</a>
+                <a href="#" style="color:white">Projects</a>
+                <a href="#" style="color:white">Contact</a>
+            </nav>
+        </header>
+        <div class="projects">
+            <div class="project-card"  >
+                <a href="food.html" class="card-link">
+                    <img src="cnfood.jpg" alt=" Add-ons">
+                <p>Food</p>
+                <p style="color:gray">Project Description 1</p>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="drink.html" class="card-link">
+                    <img src="cndrink.jpg" alt=" Add-ons">
+                <p>Drinks</p>
+                <p style="color:gray">Project Description 2</p>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="addons.html" class="card-link">
+                    <img src="addon.jpg" alt=" Add-ons">
+                <p>Add-ons</p>
+                <p style="color:gray">Project Description 3</p>
+                </a>
+            </div>
+        </div>
+        <footer style="text-align:center">
+            Thank you!
+        </footer>
+
+    </body>
+</html>
